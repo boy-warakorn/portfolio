@@ -1,0 +1,30 @@
+li {
+  display: inline-block;
+  margin-right: 50px;
+}
+.Test {
+  transition: 0.3s;
+}
+.Test:hover {
+  color: #bcbfb8;
+}
+a {
+  text-decoration: none;
+  color: #d8d8d6;
+  font-weight: 700;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.Home {
+  transition: 0.3s;
+  background-color: #909d97;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 2px;
+  font-style: italic;
+  color: #ffe9d0;
+}
+.Home:hover {
+  transform: skew(-6deg) scale(1.1);
+}

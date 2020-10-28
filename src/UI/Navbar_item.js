@@ -1,14 +1,11 @@
 import React from "react";
-import "./Navbar_item.css";
+import classes from "./Navbar_item.module.css";
 
 const NavbarItem = (props) => {
-  let name = "";
-  if (props.isHome) {
-    name = "home";
-  }
+  const itemClass = props.isHome ? [classes.Home] : [classes.Test];
   return (
     <li>
-      <a href="/" className={name}>
+      <a href="/" className={itemClass.join(" ")}>
         {props.title}
       </a>
     </li>
