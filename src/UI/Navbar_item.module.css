@@ -6,14 +6,23 @@ li {
   transition: 0.3s;
 }
 .Test:hover {
+  transform: scale(1.1);
   color: #bcbfb8;
 }
-a {
+a,
+b {
   text-decoration: none;
   color: #d8d8d6;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   display: inline-block;
+}
+b {
+  cursor: default;
+}
+
+.Active {
+  text-decoration: underline;
 }
 
 .Home {
@@ -26,5 +35,5 @@ a {
   color: #ffe9d0;
 }
 .Home:hover {
-  transform: skew(-6deg) scale(1.1);
+  transform: scale(1.05);
 }
