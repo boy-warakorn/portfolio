@@ -4,4 +4,19 @@
   padding: 15px;
   box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.26);
   list-style-type: none;
+  border-radius: 7px;
+  animation: moveInTop 1s ease-out;
+}
+
+.Padding {
+  padding: 15px 10px;
+}
+
+@keyframes moveInTop {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }

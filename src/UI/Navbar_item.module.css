@@ -4,10 +4,15 @@ li {
 }
 .Test {
   transition: 0.3s;
+  animation: fadeIn 0.5s ease-out 0.5s;
+  animation-fill-mode: backwards;
 }
 .Test:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) translateY(-1px);
   color: #bcbfb8;
+}
+.Test:active {
+  transform: translateY(0);
 }
 a,
 b {
@@ -22,7 +27,7 @@ b {
 }
 
 .Active {
-  text-decoration: underline;
+  color: #ffe9d0;
 }
 
 .Home {
@@ -33,7 +38,28 @@ b {
   border-radius: 2px;
   font-style: italic;
   color: #ffe9d0;
+  animation: fadeInLeft 0.5s ease-out 0.5s;
+  animation-fill-mode: backwards;
 }
 .Home:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) translateY(-1px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1s;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1s;
+  }
 }
