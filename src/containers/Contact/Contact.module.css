@@ -1,0 +1,7 @@
+.ContactBox {
+  grid-column: 2 / span 4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
