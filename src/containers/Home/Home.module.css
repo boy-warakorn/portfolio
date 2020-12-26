@@ -45,6 +45,9 @@
   transition: all 0.3s;
   animation: fadeIn 2s 2s backwards;
 }
+.btn:focus {
+  outline: none;
+}
 
 .btn:hover {
   transform: translateY(-5px);
