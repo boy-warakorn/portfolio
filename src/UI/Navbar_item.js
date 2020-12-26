@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import classes from "./Navbar_item.module.css";
 
 const NavbarItem = (props) => {
-  console.log(props);
   return (
     <li className={classes.NavItemBox}>
       <NavLink
