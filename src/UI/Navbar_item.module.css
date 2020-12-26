@@ -1,65 +1,25 @@
-li {
-  display: inline-block;
-  margin-right: 50px;
+.NavItemBox {
+  list-style: none;
+  margin-right: 7rem;
 }
-.Test {
-  transition: 0.3s;
-  animation: fadeIn 0.5s ease-out 0.5s;
-  animation-fill-mode: backwards;
+
+.NavItem {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem;
+
+  transition: background-color 0.3s;
 }
-.Test:hover {
-  transform: scale(1.1) translateY(-1px);
-  color: #bcbfb8;
+.NavItemActive {
+  color: rgba(0, 0, 0, 1);
 }
-.Test:active {
-  transform: translateY(0);
-}
-a,
-b {
+
+.NavItem:link,
+.NavItem:active {
   text-decoration: none;
-  color: #d8d8d6;
-  font-weight: 700;
-  font-size: 20px;
-  display: inline-block;
-}
-b {
-  cursor: default;
 }
 
-.Active {
-  color: #ffe9d0;
-}
-
-.Home {
-  transition: 0.3s;
-  background-color: #909d97;
-  padding: 5px 10px;
-  font-weight: bold;
-  border-radius: 2px;
-  font-style: italic;
-  color: #ffe9d0;
-  animation: fadeInLeft 0.5s ease-out 0.5s;
-  animation-fill-mode: backwards;
-}
-.Home:hover {
-  transform: scale(1.05) translateY(-1px);
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10px);
-  }
-  100% {
-    opacity: 1s;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1s;
-  }
+.NavItem:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }

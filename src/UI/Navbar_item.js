@@ -3,21 +3,17 @@ import { NavLink } from "react-router-dom";
 import classes from "./Navbar_item.module.css";
 
 const NavbarItem = (props) => {
-  const itemClass = props.isHome ? [classes.Home] : [classes.Test];
+  console.log(props);
   return (
-    <li>
-      {props.isMain ? (
-        <b className={itemClass.join(" ")}>{props.title}</b>
-      ) : (
-        <NavLink
-          exact
-          to={props.link}
-          className={itemClass.join(" ")}
-          activeClassName={classes.Active}
-        >
-          {props.title}
-        </NavLink>
-      )}
+    <li className={classes.NavItemBox}>
+      <NavLink
+        exact
+        to={props.link}
+        className={classes.NavItem}
+        activeClassName={classes.NavItemActive}
+      >
+        {props.children}
+      </NavLink>
     </li>
   );
 };

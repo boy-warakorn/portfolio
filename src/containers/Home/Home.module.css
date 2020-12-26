@@ -1,0 +1,74 @@
+.HeaderBox {
+  grid-column: 2 / span 4;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+/* .ProfileImg {
+  width: 100%;
+  grid-column: 1 / span 2;
+  border-radius: 50%;
+} */
+
+/* .ImageBox {
+  width: 15%;
+} */
+
+.NameText {
+  font-size: 3rem;
+  font-weight: 400;
+
+  animation: fadeIn 2s backwards;
+}
+
+.HeadingText {
+  font-size: 4rem;
+  animation: moveFromBottom 3s 0.5s backwards;
+}
+
+.btn {
+  margin-top: 2.5rem;
+  border-radius: 8rem;
+  border: none;
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  transition: all 0.3s;
+  animation: fadeIn 2s 2s backwards;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.3);
+}
+.btn:active {
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(2.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

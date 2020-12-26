@@ -1,6 +1,10 @@
 .App {
-  /* background-color: wheat; */
-  background-color: #d8d8d6;
   height: 100vh;
-  font-family: "Montserrat", sans-serif;
+
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) repeat(4, minmax(10rem, 25rem)) minmax(
+      6rem,
+      1fr
+    );
+  grid-template-rows: 10vh 90vh;
 }

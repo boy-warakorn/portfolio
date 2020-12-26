@@ -1,22 +1,36 @@
 .Navbar {
-  background-color: #49646b;
-  margin: 0;
-  padding: 15px;
-  box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.26);
-  list-style-type: none;
-  border-radius: 7px;
-  animation: moveInTop 1s ease-out;
+  grid-column: 1/-1;
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
 }
 
-.Padding {
-  padding: 15px 10px;
+.SecondaryHeading {
+  margin-right: auto;
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+
+  text-align: center;
+}
+.SecondaryHeading > * {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
 }
 
-@keyframes moveInTop {
-  0% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.invisible {
+  position: absolute;
+  left: 0;
+  top: -100%;
+  cursor: pointer;
+}
+
+.SecondaryHeading:hover .invisible {
+  top: 0;
+}
+.SecondaryHeading:hover .visible {
+  transform: translateY(100%);
 }

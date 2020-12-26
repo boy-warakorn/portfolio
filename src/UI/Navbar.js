@@ -4,14 +4,22 @@ import NavbarItem from "./Navbar_item";
 
 const Navbar = () => {
   return (
-    <div className={classes.Padding}>
-      <ul className={classes.Navbar}>
-        <NavbarItem title="boy-warakorn" isHome isMain />
-        <NavbarItem title="Home" link="/" />
-        <NavbarItem title="About" link="/about" />
-        <NavbarItem title="Contact" link="/contact" />
-      </ul>
-    </div>
+    <ul className={classes.Navbar}>
+      <h2 className={classes.SecondaryHeading}>
+        <span className={classes.visible}>@boyy-warakorn</span>
+        <span
+          className={classes.invisible}
+          onClick={() => {
+            window.open("https://github.com/boy-warakorn");
+          }}
+        >
+          Github
+        </span>
+      </h2>
+      <NavbarItem link="/">Home</NavbarItem>
+      <NavbarItem link="/about">About</NavbarItem>
+      <NavbarItem link="/contact">Contact</NavbarItem>
+    </ul>
   );
 };
 
